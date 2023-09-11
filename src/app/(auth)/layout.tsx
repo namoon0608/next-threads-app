@@ -5,6 +5,7 @@ import '@/app/globals.css';
 export const metadata = {
     title: 'Threads',
     description: 'Next 13 Meta Threads Application',
+    icons: '/assets/logo-white.svg',
 };
 
 const NotoSansTC = Noto_Sans_TC({

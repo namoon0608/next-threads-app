@@ -65,6 +65,11 @@
     "js-cookie" "3.0.1"
     "swr" "2.2.0"
 
+"@clerk/themes@^1.7.5":
+  "integrity" "sha512-kIdCIBSCp6t1saGAzbelcfZi5P+L3+CuVFwSjpulwGTRxeOOs/S8hB4CAHVbTwfxPw5Ms+AnN4dXJKHjSnxPIg=="
+  "resolved" "https://registry.npmjs.org/@clerk/themes/-/themes-1.7.5.tgz"
+  "version" "1.7.5"
+
 "@clerk/types@^3.51.0":
   "integrity" "sha512-JCSG2W1nI+zEIyDTGKfQJkvl2Ve5vpR3AxDsyXQMf/aZyXhBT351W1dPUfUW4K9MpLmZ2sB/1gj3UJFaBw9e7g=="
   "resolved" "https://registry.npmjs.org/@clerk/types/-/types-3.51.0.tgz"
