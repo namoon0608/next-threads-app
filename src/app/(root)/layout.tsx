@@ -6,6 +6,7 @@ import Navbar from '@/components/shared/Navbar';
 import LeftSideBar from '@/components/shared/LeftSideBar';
 import RightSideBar from '@/components/shared/RightSideBar';
 import Footer from '@/components/shared/Footer';
+import { dark } from '@clerk/themes';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <ClerkProvider>
+        <ClerkProvider appearance={{ baseTheme: dark }}>
             <html lang="en">
                 <body className={inter.className}>
                     <Navbar />

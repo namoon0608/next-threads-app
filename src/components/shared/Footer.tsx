@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-function Footer() {
+export default function Footer() {
     const pathname = usePathname();
 
     return (
@@ -42,5 +42,3 @@ function Footer() {
         </>
     );
 }
-
-export default Footer;

@@ -6,7 +6,7 @@ import { sidebarLinks } from '@/constants';
 import { usePathname, useRouter } from 'next/navigation';
 import { OrganizationSwitcher, SignOutButton, SignedIn } from '@clerk/nextjs';
 
-function LeftSideBar() {
+export default function LeftSideBar() {
     const route = useRouter();
     const pathname = usePathname();
 
@@ -64,5 +64,3 @@ function LeftSideBar() {
         </>
     );
 }
-
-export default LeftSideBar;

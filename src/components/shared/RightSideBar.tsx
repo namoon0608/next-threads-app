@@ -1,4 +1,4 @@
-function RightSideBar() {
+export default function RightSideBar() {
     return (
         <>
             <section className="custom-scrollbar rightsidebar">
@@ -16,5 +16,3 @@ function RightSideBar() {
         </>
     );
 }
-
-export default RightSideBar;

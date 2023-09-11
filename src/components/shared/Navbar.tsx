@@ -6,7 +6,7 @@ import { OrganizationSwitcher, SignOutButton, SignedIn } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
 import { dark } from '@clerk/themes';
 
-function Navbar() {
+export default function Navbar() {
     const route = useRouter();
     return (
         <>
@@ -52,5 +52,3 @@ function Navbar() {
         </>
     );
 }
-
-export default Navbar;

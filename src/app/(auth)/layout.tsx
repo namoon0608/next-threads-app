@@ -1,5 +1,6 @@
 import { ClerkProvider } from '@clerk/nextjs';
 import { Noto_Sans_TC } from 'next/font/google';
+import { dark } from '@clerk/themes';
 import '@/app/globals.css';
 
 export const metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <ClerkProvider>
+        <ClerkProvider appearance={{ baseTheme: dark }}>
             <html lang="en">
                 <body className={`${NotoSansTC.className} bg-dark-1`}>
                     {children}
