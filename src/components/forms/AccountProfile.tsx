@@ -20,7 +20,7 @@ import { ChangeEvent, useState } from 'react';
 import { Textarea } from '@/components/ui/textarea';
 import { isBase64Image } from '@/lib/utils';
 import { useUploadThing } from '@/lib/uploadthing';
-import { updateUser } from '@/lib/actions/user.action';
+import { updateUser } from '@/lib/actions/user.actions';
 import { usePathname, useRouter } from 'next/navigation';
 
 type ProfileProps = {
@@ -147,6 +147,7 @@ export default function AccountProfile({ user, btnTitle }: ProfileProps) {
                                         }
                                     />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -165,6 +166,7 @@ export default function AccountProfile({ user, btnTitle }: ProfileProps) {
                                         {...field}
                                     />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -183,6 +185,7 @@ export default function AccountProfile({ user, btnTitle }: ProfileProps) {
                                         {...field}
                                     />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -197,10 +200,11 @@ export default function AccountProfile({ user, btnTitle }: ProfileProps) {
                                 <FormControl className="flex-1 text-base-semibold text-gray-200">
                                     <Textarea
                                         rows={10}
-                                        className="account-form_input no-focus"
+                                        className="account-form_input no-focus resize-none"
                                         {...field}
                                     />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                     />

@@ -1,7 +1,7 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
-import User from '../models/user.models';
+import User from '../models/user.model';
 import { connect } from '../mongoose';
 
 type Props = {

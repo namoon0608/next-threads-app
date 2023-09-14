@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema({
     image: String,
     bio: String,
     threads: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Thread' }],
+    likes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Like' }],
     onboarded: {
         type: Boolean,
         default: false,
