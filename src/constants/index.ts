@@ -30,3 +30,21 @@ export const sidebarLinks = [
         label: 'Profile',
     },
 ];
+
+export const profileTabs = [
+    {
+        icon: '/assets/comment.svg',
+        value: 'threads',
+        label: 'Threads',
+    },
+    {
+        icon: '/assets/community.png',
+        value: 'replies',
+        label: 'Replies',
+    },
+    {
+        icon: '/assets/tag.png',
+        value: 'tagged',
+        label: 'Tagged',
+    },
+];
