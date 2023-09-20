@@ -39,7 +39,7 @@ export default async function ThreadIdPage({
                 <Comment
                     threadId={thread.id}
                     currentUserImg={userInfo.image}
-                    currentUserId={userInfo._id}
+                    currentUserId={JSON.stringify(userInfo._id)}
                 />
             </div>
 
