@@ -64,9 +64,9 @@ export default async function ProfileId({
                             className="w-full text-light-1"
                         >
                             <ThreadsTab
-                                currentUserId={user.id}
                                 accountId={userInfo.id}
                                 accountType="User"
+                                currentUserId={user.id}
                             />
                         </TabsContent>
                     ))}

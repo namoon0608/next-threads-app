@@ -8,6 +8,7 @@ import { dark } from '@clerk/themes';
 
 export default function Navbar() {
     const route = useRouter();
+
     return (
         <>
             <nav className="topbar">
